@@ -3,9 +3,6 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 45px;
-    /*
-    background: linear-gradient(white 25%, #f0f0f0 50%);
-    */
 }
 
 .our-content {
@@ -18,6 +15,7 @@
 
 .our-content h1 {
     color: blue;
+    font-weight: 800;
 }
 
 .line {
@@ -35,18 +33,40 @@
 }
 
 .our-btn a {
+    position: relative;
     background-color: blue;
     color: white;
     padding: 10px 16px;
     border-radius: 4px;
-}
-
-.our-btn a:first-child {
-    background-color: orange;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .our-btn a:hover {
     background-color: orange;
+}
+
+.our-btn a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -10px; 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid orange; 
+    opacity: 0;
+    transform: translateY(10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.our-btn a:hover::after {
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 .out-classes-container {
@@ -95,16 +115,19 @@
     text-align: center;
 }
 
-.bmi-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.bmi-card input{
-    border: 2px solid gray;
-    border-radius: 5px;
+a {
+    cursor: pointer;
 }
 
-.bmi-card label{
-    margin: 0 5px 5px;
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

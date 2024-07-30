@@ -9,14 +9,31 @@
   }
   
   nav {
-    margin: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+
+  #navbar {
+    background-color: transparent; 
+    transition: background-color 0.3s; 
   }
+  
+  #navbar.scrolled {
+    background-color: navy;
+  }
+
   
   .logo {
     flex: 1;
+    margin: 0 10%;
   }
   
   .menu-items {
@@ -24,6 +41,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 10%;
   }
   
   nav a {

@@ -1,0 +1,63 @@
+
+.bmi-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bmi-content-col-6 {
+    flex: 0 0 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bmi-content-col-6 .section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.bmi-content-col-6 .section h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.bmi-content-col-6 .section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.bmi-content-col-6 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.bmi-content-col-6 h2 {
+    text-align: center;
+}
+
+.bmi-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bmi-card input {
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.bmi-card label {
+    margin: 0 5px 5px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid orange;
+}
