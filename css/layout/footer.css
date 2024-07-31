@@ -1,0 +1,42 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #325494;
+    color: white;
+}
+
+.footer-logo {
+    margin-left: 10%;
+    align-self: baseline;
+}
+
+.footer-text{
+    margin-left: 10%;
+    align-self: baseline;
+}
+
+
+.footer-menu{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+
+}
