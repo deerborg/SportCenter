@@ -1,0 +1,62 @@
+:root{
+    --bg-primary: #325494;
+  }
+
+.purchase {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 45px;
+    background-color: white;
+}
+
+.purchase-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.purchase-content h1 {
+    color: var(--bg-primary);
+    font-weight: 800;
+}
+
+.purchase-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.purchase-card-img-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.purchase-card img{
+    width: 320px;
+    border-radius: 8px;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: var(--bg-primary);
+    color: white;
+}
