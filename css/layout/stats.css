@@ -1,3 +1,7 @@
+:root{
+  --bg-primary: #325494;
+}
+
 .stats {
     display: flex;
     justify-content: space-around;
@@ -20,7 +24,7 @@
   }
   
   .stat h3:first-child {
-    color: navy;
+    color: var(--bg-primary);
   }
   
   .stat p {

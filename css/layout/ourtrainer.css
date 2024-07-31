@@ -1,11 +1,16 @@
-.our-trainer{
+:root{
+    --bg-primary: #325494;
+  }
+
+.our-trainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 45px;
-    background-color: #e0e8f9
+    background-color: #e0e8f9;
 }
-.trainer-content{
+
+.trainer-content {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
@@ -13,64 +18,116 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-
 }
 
 .trainer-content h1 {
-    color: blue;
+    color: var(--bg-primary);
     font-weight: 800;
 }
 
-.trainer-img{
+.trainer-img {
     display: flex;
-    gap: 30px;
+    gap: 70px;
 }
 
+.frame {
+    position: relative;
+}
 
-
-.frame img{
+.frame img {
+    display: block; /* Resmin çevresindeki boşlukları kaldırır */
+    width: 100%; /* Resmin frame'e uyum sağlaması için */
+    height: 100%;
+    object-fit: cover; /* Resmin frame'e uyum sağlaması için */
     border: 1px solid orange;
     border-radius: 6px;
-    border-left: 10px solid navy;
 }
 
+/* Dikdörtgenlerin başlangıç durumları */
+.stick-bottom,
+.stick-left,
+.stick-top,
+.stick-right {
+    position: absolute;
+    background-color: var(--bg-primary); /* Dikdörtgenlerin arka plan rengi */
+    transition: height 0.5s ease; /* Animasyon efekti */
+}
 
+/* Alt kenar */
+.stick-bottom {
+    width: 100px; /* Dikdörtgenin genişliği */
+    height: 9px; /* Dikdörtgenin yüksekliği */
+    bottom: -9px; /* Altta konumlandırmak için */
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-.trainer-information{
-    text-align: center;
+/* Sol kenar */
+.stick-left {
+    width: 9px; /* Dikdörtgenin genişliği */
+    height: 200px; /* Dikdörtgenin yüksekliği */
+    top: 50%;
+    left: -9px; /* Solda konumlandırmak için */
+    transform: translateY(-50%);
+}
+
+/* Üst kenar */
+.stick-top {
+    width: 100px; /* Dikdörtgenin genişliği */
+    height: 9px; /* Dikdörtgenin yüksekliği */
+    top: -9px; /* Üstte konumlandırmak için */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sağ kenar */
+.stick-right {
+    width: 9px; /* Dikdörtgenin genişliği */
+    height: 200px; /* Dikdörtgenin yüksekliği */
+    top: 50%;
+    right: -9px; /* Sağda konumlandırmak için */
+    transform: translateY(-50%);
+}
+
+/* Hover durumunda değişiklikler */
+.frame:hover .stick-left {
+    height: 300px; /* Hover'da yüksekliği artır */
+}
+
+.frame:hover .stick-right {
+    height: 300px; /* Hover'da yüksekliği artır */
+}
+
+/* İçerik div'inin başlangıç ve hover durumları */
+.info-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 200px; /* Bilgi kutusunun genişliği */
+    height: 100px; /* Bilgi kutusunun yüksekliği */
+    background-color: var(--bg-primary);
+    color: white;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: navy;
-    color: white;
-    position: relative;
-    top:  -50%;
-    height: 100px;
-    border-radius: 12px;
-    
+    align-items: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Yumuşak geçiş efekti */
+    text-align: center;
+    border-radius: 6px;
 }
 
-.trainer-information h1{
-    font-weight: bold;
-    color: white;
+.frame:hover .info-box {
+    opacity: 1; /* Hover'da kutu görünür */
 }
 
-.stick-top{
-    background-color: navy;
-    position: relative;
-    border: 6px solid navy;
-    width: 50%;
-    margin-left: 25%;
-    z-index: 2;
+.info-box h2 {
+    margin: 0;
+    font-size: 18px;
 }
 
-.stick-bottom{
-    background-color: navy;
-    position: relative;
-    border: 6px solid navy;
-    width: 50%;
-    margin-left: 25%;
-    bottom: 3px;
+.info-box p {
+    margin: 0;
+    font-size: 14px;
 }
-

@@ -1,3 +1,7 @@
+:root{
+    --bg-primary: #325494;
+  }
+
 .our-classes {
     display: flex;
     justify-content: center;
@@ -14,7 +18,7 @@
 }
 
 .our-content h1 {
-    color: blue;
+    color: var(--bg-primary);
     font-weight: 800;
 }
 
@@ -34,7 +38,7 @@
 
 .our-btn a {
     position: relative;
-    background-color: blue;
+    background-color: var(--bg-primary);
     color: white;
     padding: 10px 16px;
     border-radius: 4px;

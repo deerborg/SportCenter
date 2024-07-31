@@ -1,3 +1,7 @@
+:root{
+  --bg-primary: #325494;
+}
+
 * {
     margin: 0;
     padding: 0;
