@@ -1,0 +1,36 @@
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    background-color: var(--background-color-3);
+    padding: 20px;
+}
+
+.stat{
+    padding: 30px;
+    background-color: white;
+    border-radius: 2px;
+    width: 15rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6%;
+    font-weight: bold;
+}
+
+.stat h2:first-child{
+    color: var(--background-color-1);
+}
+.stat h2:last-child{
+    color: black;
+}
+
+@media (max-width: 576px){
+    .stat{
+        margin: 10px;
+    }
+}

@@ -1,0 +1,113 @@
+.bmi{
+    margin-top: 2%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+}
+
+.bmi-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-self: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.bmi-meter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bmi-inputs{
+    margin-top: 2%;
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    gap: 1%;
+    text-align: center;
+    align-items: center;
+}
+
+.bmi-inputs input{
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.bmi-text-p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--font-color-4);
+    gap: 10px;
+}
+
+.bmi-text h1{
+    color: var(--font-color-1);
+    font-size: 3rem;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: 30px solid orange;
+    transition: margin-left 0.5s ease;
+}
+
+.under{
+    margin-left: 15%;
+}
+
+.normal{
+    margin-left: 30%;
+}
+
+.over{
+    margin-left: 47%;
+}
+
+.obese{
+    margin-left: 64%;
+}
+
+.exobese{
+    margin-left: 80%;
+}
+
+
+@media (max-width: 576px) {
+    .bmi {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bmi-text, .bmi-meter {
+        width: 90%;
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+    .triangle{
+        border: 10px solid transparent;
+        border-bottom: 20px solid orange;
+    }
+}

@@ -1,0 +1,83 @@
+.review-container {
+    background-color: #F1F8FF;
+    padding-top: 3rem;
+    color: var(--font-color-4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .review-container h2 {
+    text-align: center;
+    color: var(--font-color-1);
+    font-weight: 900;
+  }
+  
+  .review-container p {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+  
+  .client-container {
+    display: flex;
+    width:70%;
+    margin: auto;
+    gap :5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .review-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  .review-title h4{
+    font-size: 0.8rem;
+  }
+
+  .client {
+    display: flex;
+    gap:0.5rem;
+    padding-bottom: 1rem;
+  }
+  .client img {
+    border-radius: 50%;
+    width: 60px;
+  }
+  
+  .comment {
+    position: relative;
+    background-color: rgba(53, 85, 146, 1);
+  }
+  
+  .comment::after {
+    position: absolute;
+    content: "";
+    clip-path: polygon(100% 0, 1% 0, 100% 100%);
+    background-color: #788ec2a1;
+    width: 2rem;
+    height: 2rem;
+    top: 100%;
+    left: 0;
+  }
+  .comment::before {
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #788ec2a1;
+    width: 2rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+  }
+  
+  .comment p {
+    color: #ffff;
+    font-weight: 500;
+    padding: 1rem;
+  }

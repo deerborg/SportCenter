@@ -1,3 +1,15 @@
+document.getElementById('menu-icon').addEventListener('click', function() {
+    var navItem = document.getElementById('nav-item');
+    var menuIcon = document.getElementById('menu-icon');
+    if (navItem.classList.contains('open')) {
+        navItem.classList.remove('open');
+        menuIcon.innerHTML = '&#9776;';
+    } else {
+        navItem.classList.add('open');
+        menuIcon.innerHTML = '&times;';
+    }
+});
+
 const yoga = document.querySelector("#yoga");
 const group = document.querySelector("#group");
 const solo = document.querySelector("#solo");
@@ -77,17 +89,53 @@ yoga.addEventListener("click", () => {
     );
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    defaultOurClassesSectionDiv();
+defaultOurClassesSectionDiv();
+
+window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('scroll');
+    } else {
+        nav.classList.remove('scroll');
+    }
 });
 
 
-window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    if (window.scrollY > 0) {
-      navbar.classList.add('scrolled');
+const triangle = document.querySelector(".triangle");
+
+const weight = document.querySelector("#weight");
+const height = document.querySelector("#height");
+
+document.addEventListener('input', function() {
+    const weightInput = document.getElementById('weight');
+    const heightInput = document.getElementById('height');
+    const bmiResult = document.getElementById('bmi-result');
+    const triangle = document.querySelector('.triangle');
+
+    if (weightInput.value && heightInput.value) {
+      const weight = parseFloat(weightInput.value);
+      const heightCm = parseFloat(heightInput.value);
+      const heightM = heightCm / 100;
+
+      const bmi = (weight / (heightM * heightM)).toFixed(2);
+
+      bmiResult.textContent = bmi;
+
+      triangle.classList.remove('under', 'normal', 'over', 'obese', 'exobese');
+
+      if (bmi < 18.5) {
+        triangle.classList.add('under');
+      } else if (bmi >= 18.5 && bmi < 24.9) {
+        triangle.classList.add('normal');
+      } else if (bmi >= 25 && bmi < 29.9) {
+        triangle.classList.add('over');
+      } else if (bmi >= 30 && bmi < 39.9) {
+        triangle.classList.add('obese');
+      } else if (bmi >= 40) {
+        triangle.classList.add('exobese');
+      }
     } else {
-      navbar.classList.remove('scrolled');
+      bmiResult.textContent = '';
+      triangle.classList.remove('under', 'normal', 'over', 'obese', 'exobese');
     }
   });
-

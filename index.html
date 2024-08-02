@@ -1,359 +1,350 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/gym-icon-png-kansas-city-5.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="allstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Spor Center</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
 
-    <!-- Navbar section -->
-    <nav id="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-        <div class="menu-items">
-            <a href="#">Home</a>
-            <a href="#classes">Classes</a>
-            <a href="#trainers">Trainer</a>
-            <a href="#review">Review</a>
-            <a href="#contact">Contact</a>
-            <a href="#purchase" class="join-us">JOIN US</a>
-        </div>
-    </nav>
+<!--Header-->
+<header class="header" id="header">
 
-    <!-- Header section -->
-    <header>
-        <div class="header-content">
-            <div class="text">
-                <h2>POWERFUL</h2>
-                <h1>Group</h1>
-                <h1>Practice</h1>
-                <h1>With Trainer</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum debitis, tempora est beatae et veritatis odio ut adipisci quam sapiente, dolorem id nemo deserunt maxime cum, impedit optio iste saepe.</p>
-                <div class="btn">
-                    <a href="#">Sign Up</a>
-                    <a href="#">Details</a>
-                </div>
-            </div>
-        </div>
-    </header>
+  <nav class="nav">
 
-    <!-- Stats section -->
-    <section class="stats">
-        <div class="stat">
-            <h3>325</h3>
-            <p>Course</p>
-        </div>
-        <div class="stat">
-            <h3>405</h3>
-            <p>Work Out</p>
-        </div>
-        <div class="stat">
-            <h3>305</h3>
-            <p>Working Hour</p>
-        </div>
-        <div class="stat">
-            <h3>705</h3>
-            <p>Happy Client</p>
-        </div>
-    </section>
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
 
-    <!-- Our Classes section -->
-    <section id="classes" class="our-classes">
-        <div class="our-content">
-            <h1>OUR CLASSES</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto!</p>
-        </div>
+    <div class="menu-icon" id="menu-icon">
+      &#9776;
+    </div>
 
-        <div class="our-btn">
-            <a id="yoga">Yoga</a>
-            <a id="group">Group</a>
-            <a id="solo">Solo</a>
-            <a id="stretching">Stretching</a>
-        </div>
+    <div class="nav-item" id="nav-item">
+      <a href="#">Home</a>
+      <a href="#">Classes</a>
+      <a href="#">Trainer</a>
+      <a href="#">Review</a>
+      <a href="#">Contact</a>
+      <a href="#">JOIN US</a>
+    </div>
 
-        <div class="out-classes-container">
-            <div class="our-classes-row">
-                <div id="classes-text" class="our-classes-col-6">
-                    <!-- Dynamic content will be inserted here -->
-                </div>
+  </nav>
 
-                <div id="classes-img" class="our-classes-col-6">
-                    <!-- Dynamic content will be inserted here -->
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="header-content">
+    <h2>POWERFULL</h2>
+    <h1 class="fit-font">Group</h1>
+    <h1 class="fit-font">Practice</h1>
+    <h1 class="fit-font">With Trainer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+      Praesentium, totam modi fugit tenetur, nihil dolore ratione possimus blanditiis tempora suscipit eligendi libero! 
+      Voluptatem aliquid magnam autem cum accusamus, laborum odio?</p>
 
-    <!-- BMI Calculator section -->
-    <section class="bmi-calculator-container"> 
-        <div class="bmi-content-row">
-            <div class="bmi-content-col-6">
-                <div class="section">
-                    <h1>BMI Calculator</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus voluptatum impedit odit perferendis dolorum placeat, exercitationem in officia autem maiores ab nostrum laboriosam sapiente nulla totam neque eum veniam.</p>
-                    <div class="bmi-card">
-                        <input id="height" type="number" required placeholder="Your height">
-                        <label for="height">cm</label>
-                        <input id="weight" type="number" required placeholder="Your weight">
-                        <label for="weight">kg</label>
-                    </div>
-                </div>
-            </div>
+    <div class="header-btn">
+      <a href="#">Sign Up</a>
+      <a href="#">Details</a>
+    </div>
+  </div>
 
-            <div class="our-classes-col-6">
-                <h2>Your BMI</h2>
-                <img src="images/bmi-index.jpg" alt="BMI Index">
-                <div class="triangle"></div>
-            </div>
-        </div>
-    </section>
+</header>
+<!--Header End-->
 
-    <!-- Our Trainer section -->
-    <section id="trainers" class="our-trainer">
-        <div class="trainer-content">
-            <h1>OUR BEST TRAINERS</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
-            <div class="trainer-img">
-                <div class="frame">
-                    <div class="stick-top"></div>
-                    <img src="images/trainer1.jpg" alt="Trainer 1">
-                    <div class="stick-bottom"></div>
-                    <div class="info-box">
-                        <h2>Furkan Aydemir</h2>
-                        <h3>Title Job</h3>
-                    </div>
-                    <div class="stick-bottom"></div>
-                    <div class="stick-left"></div>
-                    <div class="stick-top"></div>
-                    <div class="stick-right"></div>
-                </div>
+    <!--Stats-->
+    <section id="stats" class="stats">
 
-                <div class="frame">
-                    <div class="stick-top"></div>
-                    <img src="images/trainer2.jpg" alt="Trainer 2">
-                    <div class="stick-bottom"></div>
-                    <div class="info-box">
-                        <h2>Furkan Aydemir</h2>
-                        <h3>Title Job</h3>
-                    </div>
-                    <div class="stick-bottom"></div>
-                    <div class="stick-left"></div>
-                    <div class="stick-top"></div>
-                    <div class="stick-right"></div>
-                </div>
+      <div class="stat">
+        <h2>325</h2>
+        <h2>Course</h2>
+      </div>
 
-                <div class="frame">
-                    <div class="stick-top"></div>
-                    <img src="images/trainer3.jpg" alt="Trainer 3">
-                    <div class="stick-bottom"></div>
-                    <div class="info-box">
-                        <h2>Furkan Aydemir</h2>
-                        <h3>Title Job</h3>
-                    </div>
-                    <div class="stick-bottom"></div>
-                    <div class="stick-left"></div>
-                    <div class="stick-top"></div>
-                    <div class="stick-right"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="stat">
+        <h2>405</h2>
+        <h2>Work Out</h2>
+      </div>
 
-    <!-- Purchase section -->
-    <section id="purchase" class="purchase">
-        <div class="purchase-content">
-            <h1>PURCHASE FROM US</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
-            <div class="purchase-card">
-                <div class="purchase-card-img">
-                    <img src="images/purchase1.jpg" alt="Purchase 1">
-                    <div class="purchase-card-img-content">
-                        <h2>Name/Title</h2>
-                        <h4>33.33$ / 33.99$</h4>
-                    </div>
-                    <div class="buy">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Add To Cart</h3>
-                    </div>
-                </div>
+      <div class="stat">
+        <h2>305</h2>
+        <h2>Working Hour</h2>
+      </div>
 
-                <div class="purchase-card-img">
-                    <img src="images/purchase2.jpg" alt="Purchase 2">
-                    <div class="purchase-card-img-content">
-                        <h2>Name/Title</h2>
-                        <h4>33.33$ / 33.99$</h4>
-                    </div>
-                    <div class="buy">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Add To Cart</h3>
-                    </div>
-                </div>
-
-                <div class="purchase-card-img">
-                    <img src="images/purchase3.jpg" alt="Purchase 3">
-                    <div class="purchase-card-img-content">
-                        <h2>Name/Title</h2>
-                        <h4>33.33$ / 33.99$</h4>
-                    </div>
-                    <div class="buy">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Add To Cart</h3>
-                    </div>
-                </div>
-
-                <div class="purchase-card-img">
-                    <img src="images/purchase4.jpg" alt="Purchase 4">
-                    <div class="purchase-card-img-content">
-                        <h2>Name/Title</h2>
-                        <h4>33.33$ / 33.99$</h4>
-                    </div>
-                    <div class="buy">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Add To Cart</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Review Client section -->
-    <section id="review" class="review">
-        <div class="review-content">
-            <h1>REVIEW CLIENT</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
-
-            <div class="review-card">
-
-                <div class="review-profile">
-                    <div class="review-profile-card">
-                        <div class="review-profile-img">
-                            <img src="images/client1.jpg" alt="Client 2">
-                        </div>
-                        <div class="review-profile-content">
-                            <h3>Name</h3>
-                            <h4>Title</h4>
-                        </div>
-                    </div>
-
-                    <div class="review-profile-card-box">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda maxime velit fuga laborum enim quibusdam! Excepturi, dolorem unde illum et molestias, sapiente officiis mollitia asperiores eligendi ipsum esse nemo.</p>
-                    </div>
-
-                </div>
-
-                <div class="review-profile">
-                    <div class="review-profile-card">
-                        <div class="review-profile-img">
-                            <img src="images/client2.jpg" alt="Client 2">
-                        </div>
-                        <div class="review-profile-content">
-                            <h3>Name</h3>
-                            <h4>Title</h4>
-                        </div>
-                    </div>
-
-                    <div class="review-profile-card-box">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda maxime velit fuga laborum enim quibusdam! Excepturi, dolorem unde illum et molestias, sapiente officiis mollitia asperiores eligendi ipsum esse nemo.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact section -->
-    <section id="contact" class="contact">
-
-        <div class="contact-content">
-            <h1 class="title">CONTACT US</h1>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
-
-
-            <div class="contact-form">
-
-                <div class="contact-form-text">
-
-                    <div class="contact-form-text-title">
-                        <h2>Mobile Number</h2>
-                        <h3>1241241241</h3>
-
-                    </div>
-
-                    <div class="contact-form-text-content">
-                        <h2>Email Address</h2>
-                        <h3>test@mail.com</h3>
-                    </div>
-
-                </div>
-
-                <h1>Make An Appointment</h1>
-
-                <div class="contact-input-box">
-
-                    <div class="input">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <textarea placeholder="Your Message"></textarea>
-                    </div>
-
-                    <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509282!2d144.9537353153177!3d-37.816279179751795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577df576cb89e3!2sVictoria%20Harbour%20Promenade!5e0!3m2!1sen!2sau!4v1593768785476!5m2!1sen!2sau" width="500" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
+      <div class="stat">
+        <h2>705</h2>
+        <h2>Happy Clinet</h2>
+      </div>
 
     </section>
+    <!--Stats End-->
 
-    <!-- Footer -->
-    <footer class="footer" id="footer">
+    <!--Our Classes-->
+    <section id="our-classes" class="our-classes">
+      <div class="background-shape"></div>
+      <div class="our-content">
+        <h1>OUR CLASSES</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto!</p>
+    </div>
 
-        <img class="footer-logo" src="images/logo.png">
+    <div class="our-btn">
+        <a id="yoga">Yoga</a>
+        <a id="group">Group</a>
+        <a id="solo">Solo</a>
+        <a id="stretching">Stretching</a>
+    </div>
 
-        <p class="footer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti atque esse, voluptas maiores laboriosam accusantium ratione laudantium nesciunt similique deserunt dolorum alias repudiandae at veritatis optio facere voluptate aperiam!</p>
-
-        <div class="footer-menu">
-
-            <div class="info">
-                <h2>Information</h2>
-                <h4>Info</h4>
-                <h4>Info</h4>
-                <h4>Info</h4>
-                <h4>Info</h4>
+    <div class="out-classes-container">
+        <div class="our-classes-row">
+            <div id="classes-text" class="our-classes-col-6">
+                <!-- Dynamic content will be inserted here -->
             </div>
 
-            <div class="link">
-                <h2>Helpful Links</h2>
-                <h4>Info</h4>
-                <h4>Info</h4>
-                <h4>Info</h4>
-                <h4>Info</h4>
+            <div id="classes-img" class="our-classes-col-6">
+                <!-- Dynamic content will be inserted here -->
             </div>
         </div>
+    </div>
 
-    </footer>
+    </section>
+    <!--Our Classes End-->
 
-    <!-- JavaScript -->
-    <script type="module" src="/main.js"></script>
-</body>
+
+     <!-- BMI Calculator -->
+     <section class="bmi" id="bmi"> 
+      
+      <div class="bmi-text">
+        <h1>BMI Calculator</h1>
+        <div class="bmi-text-p">
+          
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+  
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+              It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+    
+              <div class="bmi-inputs">
+                <input id="weight" type="number" placeholder="Your Weight">
+                <label for="weight">kg</label>
+                <input id="height" type="number" placeholder="Your Height">
+                <label for="weight">cm</label>
+              </div>
+
+        </div>
+      </div>
+      
+      <div class="bmi-meter">
+        <h3>Your BMI <span id="bmi-result"></span></h3></h3>
+        <div class="img">
+          <img src="/images/bmi-index.jpg">
+          <div class="triangle"></div>
+        </div>
+      </div>
+
+    </section>
+  <!-- BMI Calculator End-->
+
+ <!-- Our Trainers-->
+ <section id="trainers" class="our-trainer">
+  <div class="trainer-content">
+      <h1>OUR BEST TRAINERS</h1>
+      <div class="line"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
+      <div class="trainer-img">
+          <div class="frame">
+              <div class="stick-top"></div>
+              <img src="images/trainer1.jpg" alt="Trainer 1">
+              <div class="stick-bottom"></div>
+              <div class="info-box">
+                  <h2>Furkan Aydemir</h2>
+                  <h3>Title Job</h3>
+              </div>
+              <div class="stick-bottom"></div>
+              <div class="stick-left"></div>
+              <div class="stick-top"></div>
+              <div class="stick-right"></div>
+          </div>
+
+          <div class="frame">
+              <div class="stick-top"></div>
+              <img src="images/trainer2.jpg" alt="Trainer 2">
+              <div class="stick-bottom"></div>
+              <div class="info-box">
+                  <h2>Furkan Aydemir</h2>
+                  <h3>Title Job</h3>
+              </div>
+              <div class="stick-bottom"></div>
+              <div class="stick-left"></div>
+              <div class="stick-top"></div>
+              <div class="stick-right"></div>
+          </div>
+
+          <div class="frame">
+              <div class="stick-top"></div>
+              <img src="images/trainer3.jpg" alt="Trainer 3">
+              <div class="stick-bottom"></div>
+              <div class="info-box">
+                  <h2>Furkan Aydemir</h2>
+                  <h3>Title Job</h3>
+              </div>
+              <div class="stick-bottom"></div>
+              <div class="stick-left"></div>
+              <div class="stick-top"></div>
+              <div class="stick-right"></div>
+          </div>
+      </div>
+  </div>
+</section>
+ <!-- Our Trainers End-->
+
+<!-- Purchase section -->
+<section id="purchase" class="purchase">
+  <div class="purchase-content">
+      <h1>PURCHASE FROM US</h1>
+      <div class="line"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
+      <div class="purchase-card">
+          <div class="purchase-card-img">
+              <img src="images/purchase1.jpg" alt="Purchase 1">
+              <div class="purchase-card-img-content">
+                  <h2>Name/Title</h2>
+                  <h4>33.33$ / 33.99$</h4>
+              </div>
+              <div class="buy">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>Add To Cart</h3>
+              </div>
+          </div>
+
+          <div class="purchase-card-img">
+              <img src="images/purchase2.jpg" alt="Purchase 2">
+              <div class="purchase-card-img-content">
+                  <h2>Name/Title</h2>
+                  <h4>33.33$ / 33.99$</h4>
+              </div>
+              <div class="buy">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>Add To Cart</h3>
+              </div>
+          </div>
+
+          <div class="purchase-card-img">
+              <img src="images/purchase3.jpg" alt="Purchase 3">
+              <div class="purchase-card-img-content">
+                  <h2>Name/Title</h2>
+                  <h4>33.33$ / 33.99$</h4>
+              </div>
+              <div class="buy">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>Add To Cart</h3>
+              </div>
+          </div>
+
+          <div class="purchase-card-img">
+              <img src="images/purchase4.jpg" alt="Purchase 4">
+              <div class="purchase-card-img-content">
+                  <h2>Name/Title</h2>
+                  <h4>33.33$ / 33.99$</h4>
+              </div>
+              <div class="buy">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>Add To Cart</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Purchase End -->
+
+<!-- Review -->
+<section class="review" id="review">
+  <div class="review-container">
+    <h2>REVIEW CLIENT</h2>
+    <div class="line"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Necessitatibus odit aut iste. Amet consectetur adipisicing elit
+    </p>
+    <div class="client-container">
+      <div class="review">
+        <div class="client">
+          <img src="images/client2.jpg" />
+          <div class="review-title">
+            <h3>Diet Expert</h3>
+            <h4>CFO</h4>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            nihil recusandae. Atque, illum corporisodio pariatur ad harum
+            non, molestias maiores molestiae sapiente perferendis veniam
+            earum fugit ipsum repellendus architecto ducimus explicabo
+            reiciendis alias quasi culpa libero amet similique nisi!
+          </p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="client">
+          <img src="images/client1.jpg" />
+          <div class="review-title">
+            <h3>Cardio Trainer</h3>
+            <h4>CEO</h4>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            nihil recusandae. Atque, illum corporisodio pariatur ad harum
+            non, molestias maiores molestiae sapiente perferendis veniam
+            earum fugit ipsum repellendus architecto ducimus explicabo
+            reiciendis alias quasi culpa libero amet similique nisi!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Review End-->
+
+<!-- Contact section -->
+<section id="contact" class="contact">
+  <div class="contact-content">
+    <h2 class="title">CONTACT US</h2>
+    <div class="line"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis!</p>
+
+    <div class="contact-form">
+      <div class="contact-form-text">
+        <div class="contact-form-text-title">
+          <h2>Mobile Number</h2>
+          <h3>1241241241</h3>
+        </div>
+        <div class="contact-form-text-content">
+          <h2>Email Address</h2>
+          <h3>test@mail.com</h3>
+        </div>
+      </div>
+
+      <h2>Make An Appointment</h2>
+      <div class="contact-input-box">
+        <div class="input">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea placeholder="Your Message"></textarea>
+        </div>
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509282!2d144.9537353153177!3d-37.816279179751795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577df576cb89e3!2sVictoria%20Harbour%20Promenade!5e0!3m2!1sen!2sau!4v1593768785476!5m2!1sen!2sau" width="500" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact End -->
+
+
+    <script src="main.js"></script>
+  </body>
 </html>
