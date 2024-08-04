@@ -3,6 +3,10 @@
 
 SporCenter is a web application designed to manage and display sports-related information. This project includes HTML, CSS, JavaScript, and various assets to create a comprehensive and interactive web experience.
 
+## Live
+https://spor-center.netlify.app/
+
+
 ## Table of Contents
 
 - [SporCenter](#sporcenter)
