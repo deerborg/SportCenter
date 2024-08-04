@@ -1,3 +1,7 @@
+.review{
+  margin-bottom: 2rem;
+}
+
 .review-container {
     background-color: #F1F8FF;
     padding-top: 3rem;
@@ -22,7 +26,7 @@
   
   .client-container {
     display: flex;
-    width:70%;
+    width:50%;
     margin: auto;
     gap :5rem;
     padding-top: 2rem;
@@ -53,6 +57,7 @@
   .comment {
     position: relative;
     background-color: rgba(53, 85, 146, 1);
+    font-size: 1rem;
   }
   
   .comment::after {
@@ -80,4 +85,16 @@
     color: #ffff;
     font-weight: 500;
     padding: 1rem;
+  }
+  
+/* Responsive */
+  @media (max-width: 576px){
+    .comment{
+      width: 22rem;
+    }
+    .client-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }

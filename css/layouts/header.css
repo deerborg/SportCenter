@@ -71,6 +71,7 @@
 
 .fit-font{
     font-size: 92px;
+    text-shadow: 2px 3px 3px  black;
 }
 
 .header-content p{
@@ -111,7 +112,11 @@
     transition: background-color 0.6s;
 }
 
+.content-title{
+    text-shadow: 2px 3px 3px  black;
+}
 
+/* Responsive */
 
 @media (max-width: 576px) {
 
@@ -119,6 +124,22 @@
         position: fixed;
         top: 0;
     }
+
+
+    .header-content{
+        margin-top: 14rem;
+        margin-right: 3rem;
+    }
+   
+    .fit-font{
+        font-size: 4rem;
+    }
+    .header-btn{
+        flex-direction: column;
+        gap: 0.3rem;
+        margin-bottom: 7rem;
+    }
+
 
     .nav-item {
         border-radius: 4px;

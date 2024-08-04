@@ -31,11 +31,14 @@
     gap: 1%;
     text-align: center;
     align-items: center;
+    font-size: 0.9rem;
+    font-weight: lighter;
 }
 
 .bmi-inputs input{
     border-radius: 4px;
     padding: 8px;
+    border: 1px solid black;
 }
 
 .bmi-text-p{
@@ -93,7 +96,7 @@
     margin-left: 80%;
 }
 
-
+/* Responsive */
 @media (max-width: 576px) {
     .bmi {
         flex-direction: column;
@@ -107,7 +110,12 @@
         height: auto;
     }
     .triangle{
-        border: 10px solid transparent;
-        border-bottom: 20px solid orange;
+        border: 16px solid transparent;
+        border-bottom: 30px solid orange;
+    }
+
+    .bmi-inputs{
+        flex-direction: column;
+        align-items: baseline;
     }
 }

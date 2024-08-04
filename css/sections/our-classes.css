@@ -142,7 +142,7 @@ a {
 .fade-in {
     animation: fadeIn 2s forwards;
 }
-
+/* Responsive */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -153,6 +153,18 @@ a {
 }
 
 @media (max-width: 576px){
+    .our-classes{
+        text-align: center;
+    }
+    .our-btn{
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .line{
+        width: 7rem;
+    }
 }
 
 @media (min-width: 1800px){
